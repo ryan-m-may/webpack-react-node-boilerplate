@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '',
   },
   mode: 'development',
@@ -35,28 +35,35 @@ module.exports = {
         type: 'asset/source'
       },
       {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react'
+            ],
+            plugins: []
+          }
+        }
+      },
+      {
         test: /\.css/,
         use: [
           'style-loader', 'css-loader'
         ]
       },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [ '@babel/preset-env' ],
-            plugins: []
-          }
-        }
-      }
     ]
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Hello from Webpack!',
+      title: 'Webpack Is Running!',
+      template: __dirname + '/src/index.html',
     })
   ],
 }

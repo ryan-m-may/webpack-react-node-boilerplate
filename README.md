@@ -16,12 +16,12 @@ Start with `Getting Started` where you'll find instructions on how to get the ap
 &nbsp;
 # Table of Contents
 
-### [Getting Started]()
-### [Webpack]()
-* ### [Subcontent]()
+## [Getting Started]()
+## [Webpack]()
 * ### [dotenv-webpack]()
-### [Babel]()
+## [Babel]()
 * ### [@babel/preset-react]()
+## [React]()
 
 &nbsp;
 
@@ -43,7 +43,10 @@ content
 ---
 &nbsp;
 # Babel
-content
-[@babel/preset-react](https://babeljs.io/docs/en/babel-preset-react)
+
+`@babel/preset-react` documentation [here](https://babeljs.io/docs/en/babel-preset-react)
 
 ---
+&nbsp;
+# React
+`React` getting started documentation [here](https://reactjs.org/docs/hello-world.html)
