@@ -1,3 +1,6 @@
+## This repository is currently being built.
+### Last update: September 19, 2021.
+
 # Full Stack Boilerplate and Guide
 
 Getting React and Node set up with Webpack for the first time is confusing and frustrating. It's difficult to find learning content related to Webpack that isn't a mess. I think there are a lot of bloggers out there that haven't read up on [Webpack v5](https://webpack.js.org/blog/2020-10-10-webpack-5-release/). We have new cool things now like [Asset Modules](https://webpack.js.org/blog/2020-10-10-webpack-5-release/#asset-modules)! And a lot of other things are deprecated.
